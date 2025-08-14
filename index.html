@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>ToDo-List v1.2</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Weekly Schedule</h2>
+    </div>
+
+    <div class="main">
+
+      <div class="day container"><h4 class="day">Monday</h4><div class="day container inner">
+        <ul class="list" id="mondayList"><li><textarea rows="5" cols="22" autocomplete="on" placeholder="Click + to add a task!  Double click to delete a task. " ondblclick="textFieldEvent(this.parentElement)"></textarea></li></ul><button id="add" onClick="addTask('monday')">+</button>
+      </div></div>
+      <div class="day container"><h4 class="day">Tuesday</h4><div class="day container inner"><ul class="list" id="tuesdayList"></ul><button id="add" onClick="addTask('tuesday')">+</button></div></div>
+      <div class="day container"><h4 class="day">Wednesday</h4><div class="day container inner"><ul class="list" id="wednesdayList"></ul><button id="add" onClick="addTask('wednesday')">+</button></div></div>
+      <div class="day container"><h4 class="day">Thursday</h4><div class="day container inner"><ul class="list" id="thursdayList"></ul><button id="add" onClick="addTask('thursday')">+</button></div></div>
+      <div class="day container"><h4 class="day">Friday</h4><div class="day container inner"><ul class="list" id="fridayList"></ul><button id="add" onClick="addTask('friday')">+</button></div></div>
+      <div class="day container"><h4 class="day">Saturday</h4><div class="day container inner"><ul class="list" id="saturdayList"></ul><button id="add" onClick="addTask('saturday')">+</button></div></div>
+      <div class="day container"><h4 class="day">Sunday</h4><div class="day container inner"><ul class="list" id="sundayList"></ul><button id="add" onClick="addTask('sunday')">+</button></div></div>
+    </div>
+    <div class="footer"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
