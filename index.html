@@ -7,13 +7,17 @@
   </head>
   <body>
     <div class="header">
-      <h1>Weekly Schedule</h2>
+      <div class="left"></div>
+      <div class="middle"><h1>Weekly Schedule</h2> </div>
+      <div class="right"><button onClick="nextPageLeft()">	&#8678;</button> 
+        <table class="navigation"><tr><td>1</td ></tr></table>
+        <button onClick="nextPageRight()">&#8680;</button></div>
     </div>
 
-    <div class="main">
+    <div class="main" id="main">
 
       <div class="day container"><h4 class="day">Monday</h4><div class="day container inner">
-        <ul class="list" id="mondayList"><li><textarea rows="5" cols="22" autocomplete="on" placeholder="Click + to add a task!  Double click to delete a task. " ondblclick="textFieldEvent(this.parentElement)"></textarea></li></ul><button id="add" onClick="addTask('monday')">+</button>
+        <ul class="list" id="mondayList"><li><textarea rows="5" cols="22" autocomplete="on" placeholder="Click + to add a task!  Double click to delete a task. " ondblclick="textFieldEventDelete(this.parentElement)"></textarea></li></ul><button id="add" onClick="addTask('monday')">+</button>
       </div></div>
       <div class="day container"><h4 class="day">Tuesday</h4><div class="day container inner"><ul class="list" id="tuesdayList"></ul><button id="add" onClick="addTask('tuesday')">+</button></div></div>
       <div class="day container"><h4 class="day">Wednesday</h4><div class="day container inner"><ul class="list" id="wednesdayList"></ul><button id="add" onClick="addTask('wednesday')">+</button></div></div>
